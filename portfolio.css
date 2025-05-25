@@ -1,0 +1,167 @@
+body {
+  background-color: rgb(38, 38, 39);
+  font-family: 'Roboto', sans-serif;
+}
+
+.sticky-header {
+  position:sticky;
+  top: 0;
+  background-color: rgb(69, 69, 75);
+  padding: 0.5%;
+}
+
+.title-box {
+  background-color: rgb(69, 69, 75);
+  color: cadetblue;
+  text-align: left;
+  width: 100%;
+  top: 0%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1%;
+}
+
+.logo {
+  max-width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  align-self: flex-start; 
+  filter: contrast(67%);
+}
+
+.title-text {
+  color: cadetblue;
+  
+}
+
+.button-row {
+  display: flex;
+  justify-content: left;
+  gap: 2%;
+  padding: 1%;
+  background-color: cadetblue;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(145, 117, 82);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  transition: display 0.15s;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 2.5%;
+  transition: 0.15s;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-links {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.page-selection-button {
+  background-color: cadetblue;
+  color: rgb(69, 69, 75);
+  font-weight: bold;
+  font-size:larger;
+  border: none;
+  transition: opacity 0.15s;
+  text-decoration: none;
+}
+
+.page-selection-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.page-selection-button:active {
+  opacity: 0.3;
+}
+
+.headshot {
+  margin: 2%;
+  width: 26%;
+  height: auto;
+  border-radius: 15px;
+  padding: 2%;
+  background-color: rgb(145, 117, 82);
+}
+
+.infographic {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(145, 117, 82);
+  border-radius: 10px;
+  padding: 1.5%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.text {
+  color: whitesmoke;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.linkedin-photo {
+  width: 20%;
+  height: auto;
+  vertical-align: top;
+}
+
+.linkedin-preview {
+  border-radius: 15px;
+  width: 70%;
+  height: auto;
+  margin-bottom: 2%;
+  opacity: 0.95;
+  transition: box-shadow 0.15s;
+  transition: opacity 0.15s;
+}
+
+.linkedin-preview:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+.linkedin-preview:active {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-display {
+  width: 1500px;
+  height: calc(100vh);
+  display: block;
+  padding: 2%;
+  background-color: rgb(145, 117, 82);
+  margin: 2% auto;
+  border: none;
+  border-radius: 15px;
+}
