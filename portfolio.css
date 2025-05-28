@@ -8,9 +8,9 @@ body {
   color: cadetblue;
   opacity: 90%;
   font-size: small;
-  margin-top: 0.4%;
-  margin-left: 0.4%;
-  margin-bottom: 0.5%;
+  margin-top: clamp(0.3rem, 0.4vw, 0.6rem);
+  margin-left: clamp(0.3rem, 0.4vw, 0.6rem);
+  margin-bottom: clamp(0.4rem, 0.5vw, 0.75rem);
   display: flex;
   align-items: center;
   gap: 0.5%;
@@ -201,19 +201,24 @@ h3 {
   top: 0%;
   box-sizing: border-box;
   display: flex;
-  gap: 0.2vw;
+  align-items: center;
+  gap: clamp(0.15rem, 0.2vw, 0.4rem);
 }
 
 .logo {
-  max-width: 6.771vw;
+  width: clamp(65px, 6.77vw, 120px);
   height: auto;
   flex-shrink: 0;
-  align-self: flex-start; 
+}
+
+.title-text {
+  transform: translateY(-0.6em);
 }
 
 .title-text h1 {
   color: rgb(135, 206, 235);
   font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.1;
 }
 
 .title-text h2 {
@@ -221,21 +226,24 @@ h3 {
   font-weight: bold;
   margin: 0;
   font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+  line-height: 1.1;
 }
 
 .button-row {
   display: flex;
   justify-content: left;
   align-content: center;
-  gap: 2%;
-  padding: 1%;
+  gap: clamp(0.75rem, 2vw, 2.5rem); /* ~38.4px max at 1920px */
+  padding: clamp(0.5rem, 1vw, 1.25rem);
   background-color: rgb(135, 206, 235)
 }
 
 .dropdown {
   position: relative;
   gap: 10%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dropdown-content {
@@ -284,7 +292,7 @@ h3 {
   background-color: rgb(135, 206, 235);
   color: rgb(69, 69, 75);
   font-weight: bold;
-  font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.25rem);
   border: none;
   transition: opacity 0.15s;
   text-decoration: none;
@@ -294,7 +302,7 @@ h3 {
   background-color: rgb(135, 206, 235);
   color: rgb(33, 33, 37);
   font-weight: bold;
-  font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.25rem);
   border: none;
   transition: opacity 0.15s;
   text-decoration: underline;
@@ -943,12 +951,16 @@ h3 {
 
   /*------Home Page Adjusts------*/
   .headshot {
-    width: 90%;
-    max-width: 300px;
+    height: 100%;
+    max-height: 89.52vw;
   }
-
+  
   .home-wrapper > .infographic2 {
     flex-direction: column;
+  }
+  .introduction-paragraph {
+    width: 100%;
+    max-width: 91.14vw;
   }
 
 
