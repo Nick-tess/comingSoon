@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Engineering Portfolio of Nicholas Tessitore. See everything from educational history to project experience and more.">
+    <meta property="og:title" content="Coming Soon | Nicholas Tessitore Portfolio">
+    <meta property="og:description" content="Welcome to the Engineering Portfolio of Nicholas Tessitore. See everything from educational history to project experience and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicholastessitore.com/comingSoon">
+    <meta property="og:image" content="https://nicholastessitore.com/Images/mediaPreview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coming Soon | Nicholas Tessitore Portfolio">
+    <meta name="twitter:description" content="Welcome to the Engineering Portfolio of Nicholas Tessitore. See everything from educational history to project experience and more.">
+    <meta name="twitter:image" content="https://nicholastessitore.com/Images/mediaPreview.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Coming Soon</title>
+    <title>Coming Soon | Nicholas Tessitore</title>
     <link rel="icon" href="Images/favisonSizedLogo.png" type="image/png">
     <link rel="stylesheet" href="portfolio.css">
 
   </head>
   <body>
 
+    <a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
+
     <header class="sticky-header">
 
       <div class="title-box">
-        <img class="logo" src="Images/cadetblueLogo1.png" alt="logo">
+        <img class="logo" src="Images/cadetblueLogo1.png" alt="Personal Logo - Nicholas Tessitore">
         <div class="title-text">
           <h1>Engineering Portfolio</h1>
           <h2>Nicholas Tessitore, <em> B.S. in Mechanical Engineering</em></h2>
         </div>
       </div>
   
-      <nav class=" button-row">
-
-        <a class="page-selection-button-current">Home</a>
+      <nav class="button-row">
+        <a class="page-selection-button-current" href="index.html" tabindex="0">Home</a>
     
-       <div class="dropdown">
-        <a class="page-selection-button">Education & Experience</a>
+       <div class="dropdown" role="menu">
+        <a class="page-selection-button" tabindex="0">Education</a>
           <div class="dropdown-content">
-            <a class="dropdown-links">High School</a>
-            <a class="dropdown-links">Bachelor's Degree</a>
-            <a class="dropdown-links">Master's Degree</a>
-            <a class="dropdown-links">Undergraduate Research</a>
-            <a class="dropdown-links">Graduate Research</a>
+            <a class="dropdown-links" tabindex="0">Master's Degree</a>
+            <a class="dropdown-links" tabindex="0">Bachelor's Degree</a>
+            <a class="dropdown-links"tabindex="0">High School</a>
           </div>
         </div>
     
         <div class="dropdown">
-          <a class="page-selection-button">Projects</a>
+          <a class="page-selection-button" href="projectMainPage.html" tabindex="0">Projects</a>
           <div class="dropdown-content">
-            <a class="dropdown-links">Educational</a>
-            <a class="dropdown-links">Personal</a>
-            <a class="dropdown-links">Professional</a>
+            <a class="dropdown-links" tabindex="0">Undergraduate Research</a>
+            <a class="dropdown-links" tabindex="0">Graduate Research</a>
+            <a class="dropdown-links" tabindex="0">Educational</a>
+            <a class="dropdown-links" tabindex="0">Personal</a>
+            <a class="dropdown-links" tabindex="0">Professional</a>
           </div>
         </div>
     
-        <a class="page-selection-button">Resume</a>
+        <a class="page-selection-button" tabindex="0">Resume</a>
     
-        <a class="page-selection-button">Contact Information</a>
-
+        <a class="page-selection-button" tabindex="0">Contact Information</a>
       </nav>
 
     </header>
@@ -65,7 +76,6 @@
       <div class="not-blurry-sphere sphere7"></div>
       <div class="not-blurry-sphere sphere8"></div>
       <div class="not-blurry-sphere sphere9"></div>
-      
       <div class="less-blurry-sphere sphere10"></div>
       <div class="less-blurry-sphere sphere11"></div>
       <div class="less-blurry-sphere sphere12"></div>
@@ -84,7 +94,6 @@
       <div class="less-blurry-sphere sphere25"></div>
       <div class="less-blurry-sphere sphere26"></div>
       <div class="less-blurry-sphere sphere27"></div>
-
       <div class="blurry-sphere sphere28"></div>
       <div class="blurry-sphere sphere29"></div>
       <div class="blurry-sphere sphere30"></div>
@@ -104,10 +113,10 @@
     </div>
 
     <div class="breadcrumb">
-      <a>Home</a>
+      <a href="index.html">Home</a>
     </div>
 
-    <main>
+    <main id="main-content">
       <div class="home-wrapper">
         <div class="infographic2 row">
           <div class="introduction-paragraph">
@@ -115,11 +124,18 @@
           </div>
         </div>
       </div>
+
     </main>
 
     <footer>
-      
+
+      <p class="footer">&copy; <span id="year"></span> Nicholas Tessitore. All rights reserved.</p>
+
     </footer>
 
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
   </body>
 </html>

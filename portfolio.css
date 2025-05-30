@@ -52,7 +52,32 @@ body {
   to { transform: translateX(0); }
 }
 
-/*------Information Display Styles------*/
+footer {
+  width: 100%;
+  text-align: center;
+  padding: clamp(0.5vw, 2vw, 3vw) 0;
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  color: whitesmoke;
+  background: none;
+  position: relative;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: rgb(30, 30, 30);
+  color: whitesmoke;
+  padding: 8px 16px;
+  z-index: 10000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
 
 .photo-link {
   width: 100%;
@@ -233,7 +258,7 @@ h3 {
   display: flex;
   justify-content: left;
   align-content: center;
-  gap: clamp(0.75rem, 2vw, 2.5rem); /* ~38.4px max at 1920px */
+  gap: clamp(0.75rem, 2vw, 2.5rem);
   padding: clamp(0.5rem, 1vw, 1.25rem);
   background-color: rgb(135, 206, 235)
 }
@@ -311,7 +336,7 @@ h3 {
 }
 
 
-.page-selection-button:hover {
+.page-selection-button:hover{
   opacity: 0.6;
   cursor: pointer;
   text-decoration: underline;
@@ -323,7 +348,6 @@ h3 {
   opacity: 0.6;
   cursor: pointer;
 }
-
 
 .page-selection-button:active {
   opacity: 0.3;
